@@ -28,12 +28,38 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.headerLabel = new System.Windows.Forms.Label();
+            this.SuspendLayout();
+            // 
+            // headerLabel
+            // 
+            this.headerLabel.AutoSize = true;
+            this.headerLabel.Font = new System.Drawing.Font("Segoe UI Light", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.headerLabel.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.headerLabel.Location = new System.Drawing.Point(12, 22);
+            this.headerLabel.Name = "headerLabel";
+            this.headerLabel.Size = new System.Drawing.Size(203, 47);
+            this.headerLabel.TabIndex = 0;
+            this.headerLabel.Text = "Tournament:";
+            // 
+            // TournamentViewerForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(725, 333);
+            this.Controls.Add(this.headerLabel);
+            this.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.Name = "TournamentViewerForm";
+            this.Text = "Tournament Viewer";
+            this.Load += new System.EventHandler(this.TournamentViewerForm_Load);
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private Label headerLabel;
     }
 }

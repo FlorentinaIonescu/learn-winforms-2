@@ -6,5 +6,10 @@ namespace TrackerUI
         {
             InitializeComponent();
         }
+
+        private void TournamentViewerForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

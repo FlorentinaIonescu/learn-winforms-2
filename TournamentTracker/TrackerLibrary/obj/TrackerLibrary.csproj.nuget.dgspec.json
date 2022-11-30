@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Elvira Elena\\learn-winforms\\TournamentTracker\\TrackerLibrary\\TrackerLibrary.csproj": {}
+    "C:\\Users\\Elvira Elena\\learn-winforms-2\\TournamentTracker\\TrackerLibrary\\TrackerLibrary.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Elvira Elena\\learn-winforms\\TournamentTracker\\TrackerLibrary\\TrackerLibrary.csproj": {
+    "C:\\Users\\Elvira Elena\\learn-winforms-2\\TournamentTracker\\TrackerLibrary\\TrackerLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Elvira Elena\\learn-winforms\\TournamentTracker\\TrackerLibrary\\TrackerLibrary.csproj",
+        "projectUniqueName": "C:\\Users\\Elvira Elena\\learn-winforms-2\\TournamentTracker\\TrackerLibrary\\TrackerLibrary.csproj",
         "projectName": "TrackerLibrary",
-        "projectPath": "C:\\Users\\Elvira Elena\\learn-winforms\\TournamentTracker\\TrackerLibrary\\TrackerLibrary.csproj",
+        "projectPath": "C:\\Users\\Elvira Elena\\learn-winforms-2\\TournamentTracker\\TrackerLibrary\\TrackerLibrary.csproj",
         "packagesPath": "C:\\Users\\Elvira Elena\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Elvira Elena\\learn-winforms\\TournamentTracker\\TrackerLibrary\\obj\\",
+        "outputPath": "C:\\Users\\Elvira Elena\\learn-winforms-2\\TournamentTracker\\TrackerLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Elvira Elena\\AppData\\Roaming\\NuGet\\NuGet.Config",
