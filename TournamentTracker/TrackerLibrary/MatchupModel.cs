@@ -14,7 +14,7 @@ namespace TrackerLibrary
         /// <summary>
         /// Represents a list of all the matches.
         /// </summary>
-        public List<MatchupEntryModel> Entries { get; set; } = new List<MatchupEntryModel>;
+        public List<MatchupEntryModel> Entries { get; set; } = new List<MatchupEntryModel>();
         /// <summary>
         /// Represents the winning team of a match.
         /// </summary>
