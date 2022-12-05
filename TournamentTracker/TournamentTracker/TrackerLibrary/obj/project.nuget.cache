@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "71Sfw5hXNY5o3YuselaOWBvIPDRfre/7v9Yvi8z7c7e4coyseJLH/tfhFG3p9RZ7RGRPe1EeDQZ4wEWv6dL+vQ==",
+  "dgSpecHash": "9jhbTaW24rT3xMymSczUEXNOcv2ZqM5UwJRzT92TZZnLFR0Rh3GAC5CUn2JSrw8w0rREb6fNbLPQIeR40tIUIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Elvira Elena\\learn-winforms-2\\TournamentTracker\\TrackerLibrary\\TrackerLibrary.csproj",
+  "projectFilePath": "C:\\Users\\Elvira Elena\\learn-winforms-2\\TournamentTracker\\TournamentTracker\\TrackerLibrary\\TrackerLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elvira Elena\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512"
   ],

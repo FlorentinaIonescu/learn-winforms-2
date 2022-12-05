@@ -1,0 +1,11 @@
+C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\TrackerLibrary\obj\Debug\.netframework,version=v4.7.2\TrackerLibrary.csproj.AssemblyReference.cache
+C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\TrackerLibrary\obj\Debug\.netframework,version=v4.7.2\TrackerLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\TrackerLibrary\obj\Debug\.netframework,version=v4.7.2\TrackerLibrary.AssemblyInfoInputs.cache
+C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\TrackerLibrary\obj\Debug\.netframework,version=v4.7.2\TrackerLibrary.AssemblyInfo.cs
+C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\TrackerLibrary\obj\Debug\.netframework,version=v4.7.2\TrackerLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\TrackerLibrary\bin\Debug\.netframework,version=v4.7.2\TrackerLibrary.dll
+C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\TrackerLibrary\bin\Debug\.netframework,version=v4.7.2\TrackerLibrary.pdb
+C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\TrackerLibrary\bin\Debug\.netframework,version=v4.7.2\Dapper.dll
+C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\TrackerLibrary\obj\Debug\.netframework,version=v4.7.2\TrackerLibrary.csproj.CopyComplete
+C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\TrackerLibrary\obj\Debug\.netframework,version=v4.7.2\TrackerLibrary.dll
+C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\TrackerLibrary\obj\Debug\.netframework,version=v4.7.2\TrackerLibrary.pdb
