@@ -10,6 +10,7 @@ namespace TrackerLibrary.DataAccess
     public interface IDataConnection
     {
         PrizeModel CreatePrize(PrizeModel model); //this is a contract, it has only public terms
-
+        PersonModel CreatePerson(PersonModel model);
+        List<PersonModel> GetPerson_All();
     }
 }
