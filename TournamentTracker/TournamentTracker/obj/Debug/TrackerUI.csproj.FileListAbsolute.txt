@@ -16,3 +16,4 @@ C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\bin\D
 C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\obj\Debug\TrackerUI.csproj.CopyComplete
 C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\obj\Debug\TournamentTracker.exe
 C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\obj\Debug\TournamentTracker.pdb
+C:\Users\Elvira Elena\learn-winforms-2\TournamentTracker\TournamentTracker\bin\Debug\Dapper.dll
