@@ -98,7 +98,7 @@ namespace TrackerUI
         {
             PrizeModel p = (PrizeModel)prizesListBox.SelectedItem;
 
-            if (p! = null)
+            if (p != null)
             {
                 selectedPrizes.Remove(p);
 
@@ -127,6 +127,8 @@ namespace TrackerUI
             tm.EnteredTeams = selectedTeams;
 
             // Wire up Matchups
+            TournamentLogic.CreateRounds(tm);        
+
             // Create Tournaments entry
             // Create all of the Prizes entries
             // Create all of the Team entries
