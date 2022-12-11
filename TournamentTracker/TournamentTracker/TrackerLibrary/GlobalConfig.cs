@@ -11,6 +11,13 @@ namespace TrackerLibrary
     //everybody can use this (global variable)
     public static class GlobalConfig
     {
+        public const string PrizesFile = "PrizeModels.csv";
+        public const string PeopleFile = "PersonModels.csv";
+        public const string TeamFile = "TeamModels.csv";
+        public const string TournamentFile = "TournamentModels.csv";
+        public const string MatchupFile = "MatchupModels.csv";
+        public const string MatchupEntryFile = "MatchupEntryModels.csv";
+
         //list because we have more than one data source to pull from
         public static IDataConnection Connection { get; private set; }
 

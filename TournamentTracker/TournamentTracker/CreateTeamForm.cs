@@ -65,7 +65,7 @@ namespace TrackerUI
                 p = GlobalConfig.Connection.CreatePerson(p);
                 selectedTeamMembers.Add(p);
 
-                MessageBox.Show("Team member has been created!");
+                MessageBox.Show("Team member has been created!", "Create Team Members", MessageBoxButtons.OK);
 
                 WireUpLists(); ;
 
@@ -76,7 +76,7 @@ namespace TrackerUI
             }
             else
             {
-                MessageBox.Show("You need to fill in all of the fields.");
+                MessageBox.Show("You need to fill in all of the fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

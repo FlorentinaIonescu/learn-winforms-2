@@ -37,7 +37,7 @@ namespace TrackerUI
 
                 GlobalConfig.Connection.CreatePrize(model);
                 callingForm.PrizeComplete(model);
-                MessageBox.Show("Prize has been created!");
+                MessageBox.Show("Prize has been created!", "Create Prize", MessageBoxButtons.OK);
                 this.Close();
 
                 //placeNameValue.Text = "";
@@ -47,7 +47,7 @@ namespace TrackerUI
             }
             else
             {
-                MessageBox.Show("This form has invalid information. Please check it and try again!");
+                MessageBox.Show("This form has invalid information. Please check it and try again!", "Create Prize Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
