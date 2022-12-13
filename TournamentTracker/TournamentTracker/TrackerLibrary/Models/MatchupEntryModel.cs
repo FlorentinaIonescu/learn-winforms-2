@@ -21,7 +21,7 @@ namespace TrackerLibrary.Models
         /// </summary>
         public TeamModel TeamCompeting { get; set; }
         /// <summary>
-        /// Reprents the score for this particular team.
+        /// Represents the score for this particular team.
         /// </summary>
         public double Score { get; set; }
         /// <summary>
