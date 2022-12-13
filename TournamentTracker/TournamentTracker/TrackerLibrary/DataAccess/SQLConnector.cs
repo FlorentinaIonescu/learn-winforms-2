@@ -9,6 +9,9 @@ using System.Windows.Forms;
 using System.Xml;
 using TrackerLibrary.Models;
 
+// TODO list - what to do with Tournament Dashboard form
+// not refreshing the dropdown after having created new tournament
+
 namespace TrackerLibrary.DataAccess
 {
     public class SQLConnector : IDataConnection
@@ -183,7 +186,7 @@ namespace TrackerLibrary.DataAccess
                 }
             }
 
-            MessageBox.Show("Created tournament!");
+            MessageBox.Show("Tournament saved!");
         }
 
         public List<PersonModel> GetPerson_All()
