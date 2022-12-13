@@ -107,8 +107,12 @@ namespace TrackerUI
 
         private void LoadMatchup(MatchupModel m)
         {
+            if (matchupListBox.SelectedItem == null)
+            {
+                return;
+            }
             // a for loop instead of foreach, as we need to have the order determined;
-            for (int i = 0; i < (m?.Entries?.Count ?? 0); i++)
+            for (int i = 0; i < m.Entries.Count; i++)
             {
                 if (i == 0)
                 {
@@ -129,7 +133,7 @@ namespace TrackerUI
 
                 if (i == 1)
                 {
-                    if (m.Entries[0].TeamCompeting != null)
+                    if (m.Entries[1].TeamCompeting != null)
                     {
                         teamTwoName.Text = m.Entries[1].TeamCompeting.TeamName;
                         teamTwoScoreValue.Text = m.Entries[1].Score.ToString();
@@ -150,7 +154,7 @@ namespace TrackerUI
 
         private void unplayedOnlyCheckbox_CheckedChanged(object sender, EventArgs e)
         {
-            LoadMatchup((MatchupModel)matchupListBox.SelectedItem);
+            LoadMatchups((int)roundDropdown.SelectedItem);
         }
 
         private void scoreButton_Click(object sender, EventArgs e)

@@ -48,7 +48,7 @@ namespace TrackerLibrary.Models
                         }
                         else
                         {
-                            output += $" vs. {me.TeamCompeting.TeamName} ";
+                            output += $" vs. {me.TeamCompeting.TeamName }";
                         }
                     }
                     else
