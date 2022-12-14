@@ -62,7 +62,7 @@ namespace TrackerUI
                 p.EmailAddress = emailAddressValue.Text;
                 p.CellphoneNumber = cellphoneNumberValue.Text;
 
-                p = GlobalConfig.Connection.CreatePerson(p);
+                GlobalConfig.Connection.CreatePerson(p);
                 selectedTeamMembers.Add(p);
 
                 MessageBox.Show("Team member has been created!", "Create Team Members", MessageBoxButtons.OK);
