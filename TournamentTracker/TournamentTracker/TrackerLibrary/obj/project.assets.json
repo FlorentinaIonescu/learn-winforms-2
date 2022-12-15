@@ -1,16 +1,23 @@
 {
   "version": 3,
   "targets": {
-    ".NETFramework,Version=v4.7.2": {
-      "Dapper/2.0.123": {
+    ".NETFramework,Version=v4.5.2": {
+      "Dapper/1.60.5": {
         "type": "package",
+        "frameworkAssemblies": [
+          "Microsoft.CSharp",
+          "System",
+          "System.Data",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
         "compile": {
-          "lib/net461/Dapper.dll": {
+          "lib/net451/Dapper.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net461/Dapper.dll": {
+          "lib/net451/Dapper.dll": {
             "related": ".xml"
           }
         }
@@ -18,28 +25,27 @@
     }
   },
   "libraries": {
-    "Dapper/2.0.123": {
-      "sha512": "RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
+    "Dapper/1.60.5": {
+      "sha512": "KL47w2EPikC86Vzv/815HS3tUwbpfoqIsSPjabeNo35BkBvNFrfJa2kR4jUPuMdRLDBDG2PMJswlzh6SEelDZA==",
       "type": "package",
-      "path": "dapper/2.0.123",
+      "path": "dapper/1.60.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Dapper.png",
-        "dapper.2.0.123.nupkg.sha512",
+        "dapper.1.60.5.nupkg.sha512",
         "dapper.nuspec",
-        "lib/net461/Dapper.dll",
-        "lib/net461/Dapper.xml",
-        "lib/net5.0/Dapper.dll",
-        "lib/net5.0/Dapper.xml",
+        "lib/net451/Dapper.dll",
+        "lib/net451/Dapper.xml",
+        "lib/netstandard1.3/Dapper.dll",
+        "lib/netstandard1.3/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
         "lib/netstandard2.0/Dapper.xml"
       ]
     }
   },
   "projectFileDependencyGroups": {
-    ".NETFramework,Version=v4.7.2": [
-      "Dapper >= 2.0.123"
+    ".NETFramework,Version=v4.5.2": [
+      "Dapper >= 1.60.5"
     ]
   },
   "packageFolders": {
@@ -59,15 +65,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        ".NETFramework,Version=v4.7.2"
+        ".NETFramework,Version=v4.5.2"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net472": {
-          "targetAlias": ".NETFramework,Version=v4.7.2",
+        "net452": {
+          "targetAlias": ".NETFramework,Version=v4.5.2",
           "projectReferences": {}
         }
       },
@@ -78,12 +84,12 @@
       }
     },
     "frameworks": {
-      "net472": {
-        "targetAlias": ".NETFramework,Version=v4.7.2",
+      "net452": {
+        "targetAlias": ".NETFramework,Version=v4.5.2",
         "dependencies": {
           "Dapper": {
             "target": "Package",
-            "version": "[2.0.123, )"
+            "version": "[1.60.5, )"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"

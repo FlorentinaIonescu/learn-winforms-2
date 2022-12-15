@@ -18,18 +18,25 @@ namespace TrackerUI
         BindingList<int> rounds = new BindingList<int>();
         BindingList<MatchupModel> selectedMatchups = new BindingList<MatchupModel>();
 
-        
+
         public TournamentViewerForm(TournamentModel tournamentModel)
         {
             InitializeComponent();
 
             tournament = tournamentModel;
 
+            tournament.CompleteTournament.OnTournamentComplete += Tournament_OnTournamentComplete;
+
             WireUpLists();
 
             LoadFormData();
 
             LoadRounds();
+        }
+
+        private void Tournament_OnTournamentComplete (object sender, DateTime e)
+        {
+            this.Close();
         }
 
         private void LoadFormData()
@@ -79,7 +86,7 @@ namespace TrackerUI
                         if (m.Winner == null || !unplayedOnlyCheckbox.Checked)
                         {
                             selectedMatchups.Add(m);
-                        }                       
+                        }
                     }
                 }
             }
@@ -149,7 +156,14 @@ namespace TrackerUI
 
         private void matchupListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            LoadMatchup((MatchupModel)matchupListBox.SelectedItem);
+            if ((MatchupModel)matchupListBox.SelectedItem == null)
+            {
+                return;
+            }
+            else
+            {
+                LoadMatchup((MatchupModel)matchupListBox.SelectedItem);
+            }
         }
 
         private void unplayedOnlyCheckbox_CheckedChanged(object sender, EventArgs e)
@@ -157,8 +171,44 @@ namespace TrackerUI
             LoadMatchups((int)roundDropdown.SelectedItem);
         }
 
+        private string ValidateData()
+        {
+            string output = "";
+
+            double teamOneScore = 0;
+            double teamTwoScore = 0;
+            bool scoreOneValid = double.TryParse(teamOneScoreValue.Text, out teamOneScore);
+            bool scoreTwoValid = double.TryParse(teamTwoScoreValue.Text, out teamTwoScore);
+
+            if (!scoreOneValid)
+            {
+                output = "Score one value is not a valid number.";
+            }
+            else if (!scoreTwoValid)
+            {
+                output = "Score two value is not a valid number.";
+            }
+            else if (teamOneScore == 0 && teamTwoScore == 0)
+            {
+                output = "You did not enter a score for either of the teams.";
+            }
+            else if (teamOneScore == teamTwoScore)
+            {
+                output = "We do not allow ties in this application.";
+            }
+
+            return output;
+        }
+
         private void scoreButton_Click(object sender, EventArgs e)
         {
+            string errorMessage = ValidateData();
+            if (errorMessage.Length > 0)
+            {
+                MessageBox.Show($"Input Error: { errorMessage }");
+                return;
+            }
+            
             MatchupModel m = (MatchupModel)matchupListBox.SelectedItem;
             double teamOneScore = 0;
             double teamTwoScore = 0;
@@ -181,7 +231,7 @@ namespace TrackerUI
                         }
 
                     }
-                    
+
                 }
 
                 if (i == 1)
@@ -198,13 +248,24 @@ namespace TrackerUI
                             MessageBox.Show("Please enter valid score for Team 1.");
                             return;
                         }
-                        
+
                     }
-                    
+
                 }
             }
+
+            try
+            {
+                TournamentLogic.UpdateTournamentResults(tournament);
+                MessageBox.Show("The score is set!", "Score", MessageBoxButtons.OK);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"The application had the following error: { ex.Message } ");
+                return;
+            }
+
             
-            TournamentLogic.UpdateTournamentResults(tournament);
             LoadMatchup((MatchupModel)matchupListBox.SelectedItem);
         }
     }

@@ -12,6 +12,7 @@ using TournamentTracker;
 using TrackerLibrary;
 using TrackerLibrary.Models;
 
+
 namespace TrackerUI
 {
     public partial class CreateTournamentForm : Form, IPrizeRequester, ITeamRequester
@@ -135,6 +136,7 @@ namespace TrackerUI
             // Create all of the Team entries
             GlobalConfig.Connection.CreateTournament(tm);
             MessageBox.Show("You have created tournament!", "", MessageBoxButtons.OK);
+            tm.AlertUsersToNewRound();
             
             TournamentViewerForm frm = new TournamentViewerForm(tm);
             frm.Show();

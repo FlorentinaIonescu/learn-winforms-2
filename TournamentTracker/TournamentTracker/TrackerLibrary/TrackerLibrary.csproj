@@ -1,12 +1,12 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>.NETFramework,Version=v4.7.2</TargetFramework>
+    <TargetFramework>.NETFramework,Version=v4.5.2</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Dapper" Version="1.60.5" />
   </ItemGroup>
 
   <ItemGroup>
